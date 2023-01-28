@@ -7,17 +7,6 @@ import ptBr from "date-fns/locale/pt-BR";
 
 import styles from "./Post.module.css";
 
-interface Author {
-  name: string;
-  role: string;
-  avatarUrl: string;
-}
-
-interface Content {
-  type: "paragraph" | "link";
-  content: string;
-}
-
 interface PostProps {
   author: Author;
   publishedAt: Date;

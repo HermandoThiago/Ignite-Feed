@@ -4,7 +4,14 @@ import { Post } from "./components/Post";
 import styles from "./App.module.css";
 import "./global.css";
 
-const posts = [
+interface Post {
+  id: number;
+  author: Author;
+  content: Content[];
+  publishedAt: Date;
+}
+
+const posts: Post[] = [
   {
     id: 1,
     author: {
